@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project ddlgenerator with libraries in sub-folder">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <target name="create_run_jar">
+        <jar destfile="C:/Work/eclipse/ddlgenerator/bin/ddlgenerator.jar">
+            <manifest>
+                <attribute name="Main-Class" value="jp.co.applicative.tool.gr.ddlgenerator.ExecuteProcess"/>
+                <attribute name="Class-Path" value=". ddlgenerator_lib/poi-scala_2.10-0.7.jar ddlgenerator_lib/scala-library-2.10.0.jar ddlgenerator_lib/poi-3.8.jar ddlgenerator_lib/commons-codec-1.5.jar ddlgenerator_lib/poi-ooxml-3.8.jar ddlgenerator_lib/poi-ooxml-schemas-3.8.jar ddlgenerator_lib/xmlbeans-2.3.0.jar ddlgenerator_lib/stax-api-1.0.1.jar ddlgenerator_lib/dom4j-1.6.1.jar ddlgenerator_lib/xml-apis-1.0.b2.jar ddlgenerator_lib/scalaz-core_2.10-7.0.0-M7.jar ddlgenerator_lib/scalaz-effect_2.10-7.0.0-M7.jar"/>
+            </manifest>
+            <fileset dir="C:/Work/eclipse/ddlgenerator/target/classes"/>
+        </jar>
+        <delete dir="C:/Work/eclipse/ddlgenerator/bin/ddlgenerator_lib"/>
+        <mkdir dir="C:/Work/eclipse/ddlgenerator/bin/ddlgenerator_lib"/>
+        <copy file="C:/Users/masahirompp/.m2/repository/info/folone/poi-scala_2.10/0.7/poi-scala_2.10-0.7.jar" todir="C:/Work/eclipse/ddlgenerator/bin/ddlgenerator_lib"/>
+        <copy file="C:/Users/masahirompp/.m2/repository/org/scala-lang/scala-library/2.10.0/scala-library-2.10.0.jar" todir="C:/Work/eclipse/ddlgenerator/bin/ddlgenerator_lib"/>
+        <copy file="C:/Users/masahirompp/.m2/repository/org/apache/poi/poi/3.8/poi-3.8.jar" todir="C:/Work/eclipse/ddlgenerator/bin/ddlgenerator_lib"/>
+        <copy file="C:/Users/masahirompp/.m2/repository/commons-codec/commons-codec/1.5/commons-codec-1.5.jar" todir="C:/Work/eclipse/ddlgenerator/bin/ddlgenerator_lib"/>
+        <copy file="C:/Users/masahirompp/.m2/repository/org/apache/poi/poi-ooxml/3.8/poi-ooxml-3.8.jar" todir="C:/Work/eclipse/ddlgenerator/bin/ddlgenerator_lib"/>
+        <copy file="C:/Users/masahirompp/.m2/repository/org/apache/poi/poi-ooxml-schemas/3.8/poi-ooxml-schemas-3.8.jar" todir="C:/Work/eclipse/ddlgenerator/bin/ddlgenerator_lib"/>
+        <copy file="C:/Users/masahirompp/.m2/repository/org/apache/xmlbeans/xmlbeans/2.3.0/xmlbeans-2.3.0.jar" todir="C:/Work/eclipse/ddlgenerator/bin/ddlgenerator_lib"/>
+        <copy file="C:/Users/masahirompp/.m2/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar" todir="C:/Work/eclipse/ddlgenerator/bin/ddlgenerator_lib"/>
+        <copy file="C:/Users/masahirompp/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar" todir="C:/Work/eclipse/ddlgenerator/bin/ddlgenerator_lib"/>
+        <copy file="C:/Users/masahirompp/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar" todir="C:/Work/eclipse/ddlgenerator/bin/ddlgenerator_lib"/>
+        <copy file="C:/Users/masahirompp/.m2/repository/org/scalaz/scalaz-core_2.10/7.0.0-M7/scalaz-core_2.10-7.0.0-M7.jar" todir="C:/Work/eclipse/ddlgenerator/bin/ddlgenerator_lib"/>
+        <copy file="C:/Users/masahirompp/.m2/repository/org/scalaz/scalaz-effect_2.10/7.0.0-M7/scalaz-effect_2.10-7.0.0-M7.jar" todir="C:/Work/eclipse/ddlgenerator/bin/ddlgenerator_lib"/>
+    </target>
+</project>
